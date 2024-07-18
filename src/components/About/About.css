@@ -1,0 +1,34 @@
+.about-description {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-description {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.about-description > img {
+  max-width: 200px;
+  background-color: rgb(187, 203, 203);
+  border-radius: 50%;
+  border: 0.5px solid black;
+  margin-left: 20px;
+}
+
+.about-text {
+  text-align: justify;
+}
+
+.about-text > h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-text > p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}

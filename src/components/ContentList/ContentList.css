@@ -1,0 +1,7 @@
+.content-list {
+  color: white;
+  height: calc(100vh - 140px);
+  overflow: auto;
+  max-width: 1080px;
+  margin: auto;
+}
