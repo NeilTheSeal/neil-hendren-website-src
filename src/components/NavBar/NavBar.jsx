@@ -1,9 +1,10 @@
 import "./NavBar.css";
+import Logo from "/src/assets/nh-logo.png";
 
 export default function NavBar() {
   return (
     <nav className="main-nav">
-      <img src="/src/assets/nh-logo.png" className="nav-logo"></img>
+      <img src={Logo} className="nav-logo"></img>
       <ul className="nav-links">
         <li>
           <a href="#about">About</a>

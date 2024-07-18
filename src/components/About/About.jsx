@@ -1,5 +1,6 @@
 import Socials from "../Socials/Socials";
 import "./About.css";
+import Headshot from "/src/assets/headshot.png";
 
 export default function About() {
   return (
@@ -15,7 +16,7 @@ export default function About() {
             skills to new projects.
           </p>
         </div>
-        <img src="/src/assets/headshot.png" alt="Headshot" />
+        <img src={Headshot} alt="Headshot" />
       </div>
       <Socials />
     </section>

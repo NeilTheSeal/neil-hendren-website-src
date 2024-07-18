@@ -1,4 +1,7 @@
 import "./Projects.css";
+import CatalyticReactorImage from "/src/assets/catalytic_reactor.gif";
+import GeographyQuizImage from "/src/assets/geography_quiz.png";
+import RuneFallImage from "/src/assets/runefall.png";
 
 export default function Projects() {
   return (
@@ -19,7 +22,7 @@ export default function Projects() {
           PostgreSQL as the database.
         </p>
         <img
-          src="/src/assets/catalytic_reactor.gif"
+          src={CatalyticReactorImage}
           alt="Catalytic Reactor Virtual Laboratory"
         />
       </div>
@@ -27,7 +30,7 @@ export default function Projects() {
         <a href="https://runefall.netlify.app">RuneFall</a>
       </h3>
       <div className="project left-image">
-        <img src="/src/assets/runefall.png" alt="RuneFall" />
+        <img src={RuneFallImage} alt="RuneFall" />
         <p>
           RuneFall is a search engine for cards used in the card game RuneTerra.
           The front end is a single-page web application designed using React,
@@ -52,7 +55,7 @@ export default function Projects() {
           JavaScript, while the back end is an API that is also designed with
           Rails.
         </p>
-        <img src="/src/assets/geography_quiz.png" alt="World Geography Quiz" />
+        <img src={GeographyQuizImage} alt="World Geography Quiz" />
       </div>
     </section>
   );
