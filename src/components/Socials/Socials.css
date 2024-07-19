@@ -1,0 +1,14 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  gap: 30px;
+}
+
+.socials > a {
+  width: 70px;
+}
+
+.socials > a > img {
+  width: 100%;
+}

@@ -6,7 +6,7 @@ import RuneFallImage from "/src/assets/runefall.png";
 export default function Projects() {
   return (
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Notable Projects</h2>
       <h3>
         <a href="https://virtual-labs.learncheme.com/catalytic-reactor">
           Catalytic Reactor Virtual Laboratory

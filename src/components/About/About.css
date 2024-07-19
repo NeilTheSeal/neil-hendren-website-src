@@ -9,19 +9,24 @@
   padding: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .about-description {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-}
-
 .about-description > img {
   max-width: 200px;
   background-color: rgb(187, 203, 203);
   border-radius: 50%;
   border: 0.5px solid black;
   margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-description {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .about-description > img {
+    margin-left: 0;
+    margin-top: 30px;
+  }
 }
 
 .about-text {
