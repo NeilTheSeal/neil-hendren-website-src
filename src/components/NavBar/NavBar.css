@@ -1,6 +1,7 @@
 .main-nav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 100px minmax(max-content, 980px);
   align-items: center;
   padding: 1rem 1rem;
   height: 80px;
@@ -14,7 +15,7 @@
 
 .nav-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   list-style: none;
   gap: 20px;
