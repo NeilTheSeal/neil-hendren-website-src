@@ -1,0 +1,109 @@
+#landing {
+  margin: auto;
+  background-image: url("/src/assets/front_page_bg.webp");
+  background-size: clamp(820px, 100vw, 100vw);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  color: var(--text-color-primary);
+  clip-path: ellipse(120% 100% at top center);
+}
+
+.landing-description {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  justify-items: center;
+  padding: 20px;
+  -webkit-backdrop-filter: brightness(0.45);
+  backdrop-filter: brightness(0.45);
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+
+.landing-logo::after {
+  content: "Full-Stack Developer";
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "Ubuntu";
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+}
+
+.landing-logo {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-items: center;
+  height: max-content;
+  position: relative;
+}
+
+.landing-logo > img {
+  max-height: 230px;
+  /* background-color: rgb(187, 203, 203); */
+  background: linear-gradient(145deg, #e2e2e2, #525252);
+  border-radius: 50%;
+  border: 0.5px solid black;
+  margin-left: 20px;
+  box-shadow: 0 0 12px 12px rgba(0, 0, 0, 0.5);
+}
+
+.landing-name {
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-rows: max-content max-content;
+  justify-items: end;
+}
+
+.landing-name > h1 {
+  font-size: 4rem;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+  .landing-description {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-bottom: 120px;
+    padding-top: 30px;
+  }
+
+  .landing-description > img {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .landing-name > h1 {
+    font-size: 3rem;
+  }
+
+  .landing-logo::after {
+    font-size: 2.5rem;
+    bottom: -60px;
+  }
+
+  .landing-logo > img {
+    max-height: 170px;
+  }
+}
+
+.landing-text {
+  text-align: justify;
+}
+
+.landing-text > h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.landing-text > p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}

@@ -1,16 +1,36 @@
 #contact {
   padding: 20px;
+  padding-top: 80px;
   max-width: 1080px;
   margin: auto;
+  position: relative;
 }
 
-#contact > h1 {
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+.contact-header {
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: rgb(0, 0, 0);
+  background-color: rgb(226, 226, 226);
+  padding: 6px 12px;
+  border: 1px solid rgb(33, 53, 53);
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 1);
+  pointer-events: none;
+}
+
+#contact > p {
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  pointer-events: none;
 }
 
 #contact > p > a {
   color: cornflowerblue;
   text-decoration: none;
   border-bottom: 2px solid cornflowerblue;
+  pointer-events: auto;
 }

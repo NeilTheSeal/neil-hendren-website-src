@@ -1,24 +1,26 @@
-import Socials from "../Socials/Socials";
 import "./About.css";
-import Headshot from "/src/assets/headshot.png";
+import Climbing from "/src/assets/climbing.png";
 
 export default function About() {
   return (
     <section id="about">
-      <div className="about-description">
-        <div className="about-text">
-          <h2>About Me</h2>
+      <h2 className="about-header">About Me</h2>
+      <div className="about-container">
+        <div className="about-description">
+          <div className="about-image">
+            <img src={Climbing} alt="Climbing" />
+          </div>
           <p>
-            I am a software developer with a passion for creating web
-            applications. I am proficient in JavaScript, React, and Node.js, and
-            I am always looking to learn new technologies. I have a background
-            in computer science and mathematics, and I am excited to apply my
-            skills to new projects.
+            Hi! I&apos;m a full-stack web developer with a background in
+            chemical engineering. I have experience with JavaScript, React, Ruby
+            on Rails, and PostgreSQL. I enjoy building web applications that are
+            both visually appealing and user-friendly. I am also passionate
+            about teaching and learning new technologies. When I&apos;m not
+            coding, you can find me at the gym, playing guitar, rock climbing,
+            or playing chess.
           </p>
         </div>
-        <img src={Headshot} alt="Headshot" />
       </div>
-      <Socials />
     </section>
   );
 }
