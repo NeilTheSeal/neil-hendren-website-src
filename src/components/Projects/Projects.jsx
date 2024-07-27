@@ -8,9 +8,9 @@ export default function Projects() {
   return (
     <section id="projects">
       <h2 className="projects-header">Notable Projects</h2>
-      <Project project={ProjectsData[0]} />
-      <Project project={ProjectsData[1]} />
-      <Project project={ProjectsData[2]} />
+      {ProjectsData.map((project, i) => (
+        <Project project={project} key={i} />
+      ))}
     </section>
   );
 }

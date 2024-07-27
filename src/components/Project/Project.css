@@ -25,6 +25,7 @@
   opacity: 0;
   transition-property: opacity;
   transition-duration: 0.5s;
+  max-width: 100%;
 }
 
 .project:hover .project-description {
@@ -37,7 +38,7 @@
   margin-bottom: 20px;
   text-align: center;
   display: grid;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: calc(100% - 30px) max-content;
   gap: 10px;
   align-content: center;
   align-items: center;
