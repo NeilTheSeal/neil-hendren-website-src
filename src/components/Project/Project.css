@@ -12,7 +12,7 @@
 .project:hover {
   box-shadow: 0 0 12px 8px rgba(176, 147, 73, 0.5);
   width: calc(100vw - 60px);
-  max-width: 768px;
+  max-width: 500px;
 }
 
 .project-container > img {
@@ -74,7 +74,7 @@
 }
 
 .project:hover .project-description > p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .external-link {
