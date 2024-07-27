@@ -1,5 +1,5 @@
 import "./About.css";
-import Climbing from "/src/assets/climbing.png";
+import Climbing from "/src/assets/climbing.jpg";
 
 export default function About() {
   return (
