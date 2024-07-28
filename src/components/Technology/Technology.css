@@ -13,10 +13,14 @@
   justify-content: center;
   gap: 5px;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  transition: all 0.1s;
+  /* background: #4fc2e2; */
 }
 
 .technology:hover {
-  box-shadow: 0px 10px 10px 0px rgba(155, 255, 255, 0.8);
+  box-shadow: 0px 10px 10px 0px rgba(255, 255, 225, 0.8);
+  transform: translateY(-3px) scale(1.03);
 }
 
 .technology > img {
