@@ -2,6 +2,7 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Landing from "../Landing/Landing";
 import Projects from "../Projects/Projects";
+import Technologies from "../Technologies/Technologies";
 import "./ContentList.css";
 
 export default function ContentList() {
@@ -10,6 +11,7 @@ export default function ContentList() {
       <Landing />
       <About />
       <Projects />
+      <Technologies />
       <Contact />
     </div>
   );

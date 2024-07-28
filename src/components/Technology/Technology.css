@@ -1,0 +1,48 @@
+.technology {
+  display: grid;
+  background: linear-gradient(
+    180deg,
+    rgb(235, 235, 235) 0%,
+    rgb(185, 185, 185) 100%
+  );
+  padding: 10px;
+  padding-bottom: 15px;
+  border: 2px solid red;
+  border-radius: 8px;
+  width: 150px;
+  justify-content: center;
+  gap: 5px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.technology:hover {
+  box-shadow: 0px 10px 10px 0px rgba(155, 255, 255, 0.8);
+}
+
+.technology > img {
+  width: 90px;
+  justify-self: center;
+}
+
+.technology > p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  text-shadow: 0px 0px 1px rgba(155, 155, 205, 1);
+  pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+  .technology {
+    width: 105px;
+  }
+
+  .technology > img {
+    width: 60px;
+  }
+
+  .technology > p {
+    font-size: 0.85rem;
+  }
+}

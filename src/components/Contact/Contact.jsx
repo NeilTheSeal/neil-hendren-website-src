@@ -1,3 +1,4 @@
+import Socials from "../Socials/Socials";
 import "./Contact.css";
 
 export default function Contact() {
@@ -10,6 +11,7 @@ export default function Contact() {
           neil.hendren@gmail.com
         </a>
       </p>
+      <Socials />
     </section>
   );
 }

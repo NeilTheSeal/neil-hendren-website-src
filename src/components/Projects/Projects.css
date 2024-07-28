@@ -22,6 +22,7 @@
   height: 40px;
   background-color: var(--bg-color-secondary);
   clip-path: ellipse(55% 100% at top center);
+  z-index: 1;
 }
 
 @media screen and (min-width: 1080px) {

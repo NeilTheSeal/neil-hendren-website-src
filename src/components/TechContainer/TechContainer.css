@@ -1,0 +1,59 @@
+.tech-container {
+  display: grid;
+  background: linear-gradient(
+    180deg,
+    rgb(155, 155, 205) 0%,
+    rgb(235, 235, 235) 100%
+  );
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px;
+  padding-top: 25px;
+  position: relative;
+  box-shadow: 0px 0px 4px 3px rgba(255, 255, 255, 0.5);
+  width: calc(100vw - 40px);
+  max-width: 768px;
+  justify-self: center;
+  height: max-content;
+  align-self: center;
+}
+
+.tech-label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -33px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--text-color-primary);
+  font-weight: 700;
+  background-color: rgb(135, 135, 205);
+  width: max-content;
+  padding: 5px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 1px rgb(0, 0, 0);
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+  pointer-events: none;
+}
+
+.tech-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .tech-container {
+    justify-self: start;
+  }
+
+  .tech-list {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
