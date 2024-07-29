@@ -15,7 +15,9 @@
   width: calc(100vw - 40px);
   max-width: 768px;
   justify-self: center;
-  height: max-content;
+  height: 100%;
+  align-items: center;
+  align-content: start;
   align-self: center;
 }
 

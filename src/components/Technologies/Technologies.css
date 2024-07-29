@@ -28,11 +28,18 @@
   padding-bottom: 120px;
   display: grid;
   gap: 30px;
+  row-gap: 50px;
   grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
 }
 
 @media screen and (max-width: 480px) {
   .technologies-header {
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1566px) {
+  .technologies-backdrop {
+    row-gap: 80px;
   }
 }
