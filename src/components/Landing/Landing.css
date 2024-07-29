@@ -109,9 +109,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .landing-description {
-  }
-
   .landing-logo::after {
     font-size: 2rem;
   }
