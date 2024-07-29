@@ -32,6 +32,7 @@
   max-width: 768px;
   margin-left: 40px;
   padding-right: 20px;
+  padding-bottom: 30px;
 }
 
 .about-description > p {
@@ -105,5 +106,32 @@
 
   .about-description > p {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-description {
+    margin-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-header {
+    font-size: 1rem;
+  }
+
+  .about-image {
+    display: none;
+  }
+
+  .about-image > img {
+    display: none;
+  }
+
+  .about-image::after {
+    display: none;
+  }
+
+  .about-description > p {
+    font-size: 0.8rem;
   }
 }

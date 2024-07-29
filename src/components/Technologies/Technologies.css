@@ -30,3 +30,9 @@
   gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
 }
+
+@media screen and (max-width: 480px) {
+  .technologies-header {
+    font-size: 1rem;
+  }
+}

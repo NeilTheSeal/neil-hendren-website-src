@@ -64,3 +64,22 @@
   border-radius: 10px;
   box-shadow: 0px 0px 4px 1px rgba(100, 100, 100, 0.3);
 }
+
+@media screen and (max-width: 480px) {
+  .contact-header {
+    font-size: 1rem;
+  }
+
+  #contact {
+    grid-template-columns: max-content;
+  }
+
+  #contact > p {
+    font-size: 0.9rem;
+  }
+
+  #contact > .socials {
+    max-width: max-content;
+    justify-self: center;
+  }
+}

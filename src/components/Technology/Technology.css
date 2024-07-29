@@ -50,3 +50,17 @@
     font-size: 0.85rem;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .technology {
+    width: 80px;
+  }
+
+  .technology > img {
+    width: 45px;
+  }
+
+  .technology > p {
+    font-size: 0.7rem;
+  }
+}
