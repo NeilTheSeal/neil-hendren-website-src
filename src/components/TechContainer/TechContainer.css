@@ -44,9 +44,9 @@
 
 .tech-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   justify-items: center;
-  gap: 25px;
+  gap: 21px;
   padding: 20px;
 }
 
@@ -56,7 +56,12 @@
   }
 
   .tech-list {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+  }
+
+  .tech-label {
+    font-size: 1.25rem;
+    top: -30px;
   }
 }
 
@@ -67,6 +72,6 @@
   }
 
   .tech-list {
-    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
   }
 }
