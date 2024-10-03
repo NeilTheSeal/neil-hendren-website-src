@@ -8,28 +8,3 @@
   background-color: #333;
   color: #fff;
 }
-
-.nav-logo {
-  width: 60px;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  list-style: none;
-  gap: 20px;
-}
-
-.nav-links > li {
-  cursor: pointer;
-}
-
-.nav-links > li > a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.nav-links > li > a:hover {
-  color: #f1f1f1;
-}

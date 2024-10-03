@@ -1,19 +1,15 @@
 import "./NavBar.css";
-import Logo from "/src/assets/nh-logo.png";
+import NavButton from "./NavButton.jsx";
 
 export default function NavBar() {
   return (
     <nav className="main-nav">
-      <img src={Logo} className="nav-logo"></img>
       <ul className="nav-links">
         <li>
-          <a href="#about">About</a>
+          <NavButton type="default" label="Home" />
         </li>
         <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
+          <NavButton type="dropdown" label="Blog" />
         </li>
       </ul>
     </nav>
