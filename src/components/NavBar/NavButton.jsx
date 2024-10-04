@@ -1,53 +1,78 @@
 import PropTypes from "prop-types";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import routes from "../../routes/routes.js";
 
 const posts = routes.filter((route) => {
   return route.type === "post";
 });
 
-const dropdown = posts.map((post, i) => {
+const dropdownLinks = posts.map((post, i) => {
   return (
-    <a href={post.uri} key={i}>
+    <a className="dropdown-link" href={post.uri} key={i}>
       {post.name}
     </a>
   );
 });
 
-export default function NavButton({ type, label }) {
+export default function NavButton({ type, label, destination }) {
+  const [dropdownHovered, setDropdownHovered] = useState(false);
+
+  const handleHoverOverDropdown = () => {
+    setDropdownHovered(true);
+  };
+
+  const handleHoverOutsideDropdown = (e) => {
+    if (
+      e.target.classList.contains("dropdown") ||
+      e.target.classList.contains("dropdown-content") ||
+      e.target.classList.contains("nav-button-label") ||
+      e.target.classList.contains("dropdown-link")
+    ) {
+      return;
+    }
+    setDropdownHovered(false);
+  };
+
+  const dropdownClassName = dropdownHovered
+    ? "nav-button dropdown active"
+    : "nav-button dropdown";
+
+  const dropdownContentClassName = dropdownHovered
+    ? "dropdown-content active"
+    : "dropdown-content";
+
   useEffect(() => {
-    const dropdowns = document.querySelectorAll(".dropdown");
+    if (dropdownHovered) {
+      document.addEventListener("mouseover", handleHoverOutsideDropdown);
+    } else {
+      document.removeEventListener("mouseover", handleHoverOutsideDropdown);
+    }
 
-    dropdowns.forEach((dropdown) => {
-      dropdown.addEventListener("click", function () {
-        this.classList.toggle("active");
-      });
-    });
-
-    window.onclick = function (event) {
-      if (!event.target.matches(".nav-button-label")) {
-        dropdowns.forEach((dropdown) => {
-          if (dropdown.classList.contains("active")) {
-            dropdown.classList.remove("active");
-          }
-        });
-      }
+    return () => {
+      document.removeEventListener("mouseover", handleHoverOutsideDropdown);
     };
-  }, []);
+  }, [dropdownHovered]);
 
   if (type === "dropdown") {
     return (
-      <div className="nav-button dropdown">
+      <div className={dropdownClassName} onMouseEnter={handleHoverOverDropdown}>
         <button className="nav-button-label">{label}</button>
-        <div className="dropdown-content">{dropdown}</div>
+        <div className={dropdownContentClassName}>{dropdownLinks}</div>
       </div>
     );
   } else {
-    return <button className="nav-button">{label}</button>;
+    return (
+      <a className="nav-button-link" href={destination}>
+        <div className="nav-button">
+          <button className="nav-button-label">{label}</button>
+        </div>
+      </a>
+    );
   }
 }
 
 NavButton.propTypes = {
   type: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
+  destination: PropTypes.string,
 };
