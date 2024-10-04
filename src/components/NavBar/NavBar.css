@@ -1,80 +1,108 @@
 .main-nav {
   display: grid;
   justify-content: center;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: max-content 1fr max-content;
   align-items: center;
   height: max-content;
   margin: 0px;
+  gap: 10px;
   background-color: #333;
-  color: #fff;
+  color: lightblue;
 }
 
-.nav-button {
-  padding: 10px 30px;
+#nav-buttons {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, max-content);
   height: 100%;
 }
 
-.nav-button,
-.nav-button > .nav-button-label {
-  cursor: pointer;
+#brand-name {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  font-weight: bold;
+  pointer-events: none;
 }
 
-.nav-button.dropdown,
-.nav-button.dropdown > .nav-button-label {
-  cursor: default;
-}
-
-.nav-button.active {
-  background-color: #2a2a2a;
-}
-
-.nav-button:hover {
-  background-color: #2a2a2a;
-}
-
-.nav-button-label {
-  font-size: 1.2rem;
-  border: none;
+.main-nav > .socials {
+  margin: 0px;
   background-color: transparent;
-  color: white;
+  border: none;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+.main-nav > .socials > a {
+  width: 27px;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  transform: translateY(100%);
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
-  border: 1px solid grey;
-  z-index: 1;
-  font-size: 0.8rem;
-  width: max-content;
+/* small mobile */
+
+@media (max-width: 600px) {
+  .main-nav {
+    grid-template-columns: max-content 1fr 1fr;
+  }
+
+  #brand-name {
+    font-size: 1.3rem;
+  }
+
+  #nav-buttons {
+    display: none;
+    height: min-content;
+  }
+
+  #nav-buttons.active {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: #585858;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
 }
 
-.dropdown-content.active {
-  display: block;
+@media screen and (max-width: 500px) {
+  #brand-name {
+    font-size: 1.1rem;
+  }
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+@media screen and (max-width: 400px) {
+  .main-nav {
+    gap: 5px;
+  }
+
+  #brand-name {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+  }
+
+  .main-nav > .socials > a {
+    width: 25px;
+  }
 }
 
-.dropdown-content a:hover {
-  background-color: #e5e5e5;
+/* large screens */
+
+@media screen and (min-width: 768px) {
+  .main-nav {
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-columns: max-content minmax(100px, 400px) max-content;
+  }
 }
 
-.nav-button-link {
-  text-decoration: none;
-  color: white;
+@media screen and (min-width: 1080px) {
+  #brand-name {
+    font-size: 2rem;
+  }
+
+  .main-nav > .socials > a {
+    width: 40px;
+  }
 }

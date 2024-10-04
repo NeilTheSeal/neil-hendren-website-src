@@ -1,0 +1,22 @@
+#hamburger {
+  display: none;
+}
+
+/* small mobile */
+@media (max-width: 600px) {
+  #hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 40px;
+    margin: 10px;
+    margin-left: 20px;
+    background-color: rgb(106, 106, 106);
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  #hamburger:hover {
+    background-color: rgb(86, 86, 86);
+  }
+}
