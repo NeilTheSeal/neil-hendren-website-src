@@ -3,7 +3,7 @@ import "./TernaryComputing.css";
 
 export default function TernaryComputing() {
   return (
-    <div className="TernaryComputing">
+    <div className="post-body">
       <h1>What the Hell is Ternary Computing?</h1>
       <p>
         Ternary computing is a type of computing that uses three states instead
