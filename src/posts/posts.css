@@ -32,7 +32,8 @@ section > h1 {
   line-height: 1.3;
 }
 
-section > p {
+section > p,
+.text-with-image > p {
   font-size: 0.95rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
@@ -158,6 +159,18 @@ section a:hover {
   font-size: 1.1rem;
 }
 
+/* .text-with-image {
+  display: grid;
+  place-items: center;
+} */
+
+.text-with-image > img {
+  float: left;
+  width: 350px;
+  margin: 20px;
+  margin-bottom: 12px;
+}
+
 /* Add responsive design */
 @media (max-width: 850px) {
   section {
@@ -169,7 +182,8 @@ section a:hover {
     font-size: 1.25rem;
   }
 
-  section > p {
+  section > p,
+  .text-with-image > p {
     font-size: 0.9rem;
   }
 
@@ -181,10 +195,19 @@ section a:hover {
   .section-label-bottom {
     font-size: 1rem;
   }
+
+  .text-with-image > img {
+    float: none;
+    width: calc(100% - 80px);
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 450px) {
-  section > p {
+  section > p,
+  .text-with-image > p {
     font-size: 0.8rem;
     margin-bottom: 0.8rem;
   }
@@ -201,5 +224,11 @@ section a:hover {
   .section-label-top,
   .section-label-bottom {
     font-size: 0.8rem;
+  }
+
+  .text-with-image > img {
+    width: calc(100% - 40px);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
 }
