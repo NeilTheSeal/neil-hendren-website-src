@@ -9,9 +9,9 @@ export default [
     type: "post",
   },
   {
-    name: "What the Hell is Ternary Computing?",
+    name: "What Exactly is Ternary Computing?",
     jsx: TernaryComputing,
-    uri: "/blog/what-the-hell-is-ternary-computing",
+    uri: "/blog/what-exactly-is-ternary-computing",
     type: "post",
   },
 ];
