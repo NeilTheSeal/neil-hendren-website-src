@@ -17,7 +17,7 @@ export default function About() {
             applications that are both visually appealing and user-friendly. I
             love science and engineering, and love finding creative ways to
             improve the performance and usability of my apps. At the University
-            of Colorado, I built scientic simulations, where performance was
+            of Colorado, I built scientific simulations, where performance was
             very important, so I always try to optimize my algorithms. When
             I&apos;m not coding, I enjoy powerlifting, rock climbing,
             volleyball, playing musical instruments, and playing chess. My goal
