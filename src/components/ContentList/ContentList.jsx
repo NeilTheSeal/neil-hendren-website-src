@@ -5,6 +5,7 @@ import Landing from "../Landing/Landing";
 import Projects from "../Projects/Projects";
 import Technologies from "../Technologies/Technologies";
 import "./ContentList.css";
+import "/src/posts/posts.css";
 
 export default function ContentList() {
   return (

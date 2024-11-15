@@ -1,3 +1,4 @@
+import AdviceImg from "/src/assets/newspaper.png";
 import TernaryImg from "/src/assets/ternary.png";
 import WebVulnerabilityImg from "/src/assets/web-vulnerability-img.png";
 
@@ -15,5 +16,12 @@ export default [
       "It's not binary ... An exploration of ternary computing and its potential advantages.",
     href: "/blog/what-exactly-is-ternary-computing",
     img: TernaryImg,
+  },
+  {
+    title: "The Modern-Day Advice Column",
+    caption:
+      "In a nostalgic throwback to the advice columns of yesteryear, I built an email advice bot using Ruby on Rails.",
+    href: "/blog/modern-day-advice-column",
+    img: AdviceImg,
   },
 ];

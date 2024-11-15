@@ -1,4 +1,3 @@
-import "../posts.css";
 import "./TernaryComputing.css";
 import TernaryImage from "/src/assets/ternary.png";
 
