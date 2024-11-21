@@ -12,9 +12,15 @@
 .post-body {
   font-size: 1.1em;
   line-height: 1.6;
+  min-height: 100vh;
   margin: 0px;
   padding: 0px;
   color: var(--text-primary);
+  background: linear-gradient(
+    90deg,
+    var(--bg-secondary) 0%,
+    var(--bg-primary) 100%
+  );
 }
 
 section {
@@ -48,7 +54,8 @@ section > ul {
   font-size: 0.95rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
-  padding-left: 2rem;
+  padding-left: 4rem;
+  padding-right: 2rem;
   max-width: 800px;
 }
 
@@ -191,6 +198,7 @@ section a:hover {
 
   section > ul {
     font-size: 0.9rem;
+    padding-left: 3rem;
   }
 
   .section-label-top,

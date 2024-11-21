@@ -139,6 +139,15 @@
 
   .project-description > p {
     font-size: 0.7rem;
+    padding: 2px;
+  }
+
+  .project-link {
+    margin-bottom: 3px;
+  }
+
+  .project-github-link {
+    margin-top: 6px;
   }
 }
 

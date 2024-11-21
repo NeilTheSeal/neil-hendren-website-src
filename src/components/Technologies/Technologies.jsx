@@ -1,21 +1,21 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import "./Technologies.css";
 import TechContainer from "/src/components/TechContainer/TechContainer.jsx";
 import TechnologiesData from "/src/data/technologies.js";
 
 export default function Technologies() {
-  useEffect(() => {
-    const bg = document.getElementById("technologies-bg");
-    let scroll = window.scrollY;
-    window.addEventListener("scroll", () => {
-      if (scroll < window.scrollY) {
-        bg.style.backgroundPosition = `0 ${window.scrollY / 2}px`;
-      } else {
-        bg.style.backgroundPosition = `0 ${window.scrollY / 2}px`;
-      }
-      scroll = window.scrollY;
-    });
-  }, []);
+  // useEffect(() => {
+  //   const bg = document.getElementById("technologies-bg");
+  //   let scroll = window.scrollY;
+  //   window.addEventListener("scroll", () => {
+  //     if (scroll < window.scrollY) {
+  //       bg.style.backgroundPosition = `0 ${window.scrollY / 2}px`;
+  //     } else {
+  //       bg.style.backgroundPosition = `0 ${window.scrollY / 2}px`;
+  //     }
+  //     scroll = window.scrollY;
+  //   });
+  // }, []);
 
   return (
     <section id="technologies">

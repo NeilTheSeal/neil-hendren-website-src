@@ -1,6 +1,7 @@
 import ExpansionImage from "/src/assets/adiabatic_irreversible_expansion_compression.jpg";
 import CatalyticReactorImage from "/src/assets/catalytic_reactor.gif";
 import GeographyQuizImage from "/src/assets/geography_quiz.png";
+import GithubPagesImage from "/src/assets/github_pages.png";
 import LearnChemEImage from "/src/assets/learncheme.jpg";
 import RuneFallImage from "/src/assets/runefall.png";
 
@@ -9,7 +10,7 @@ export default [
     title: "LearnChemE",
     link: "https://learncheme.com",
     description:
-      "LearnChemE is a website that provides educational resources for chemical engineering students. The website is built on the WordPress platform, with custom widgets, components, and scripts designed by me. LearnChemE has thousands of educational screencasts on all sorts of engineering topics, as well as 100+ interactive simulations, many of which I authored. The website is used by thousands of students and instructors worldwide.",
+      "LearnChemE is a website that provides free educational resources for chemical engineering students and professionals. The website is built on the WordPress platform, with custom widgets, components, and scripts I designed. LearnChemE has thousands of educational screencasts on all sorts of engineering topics, as well as 100+ interactive simulations, many of which I authored.",
     image: LearnChemEImage,
   },
   {
@@ -29,21 +30,31 @@ export default [
     github_link: "https://github.com/runefall",
   },
   {
-    title: "World Geography Quiz",
-    link: "https://secret-citadel-94988-86e2ffef1cda.herokuapp.com",
-    description:
-      'Test your knowledge of world geography with this fun quiz. You will be asked a series of multiple choice questions and given a score at the end of the quiz. If you score high enough, you will appear on the high scores. Quiz questions are generated procedurally (that is, there is not a database of "quiz questions", but rather an algorithm that uses a database of world geographical information to generate questions). The front-end is designed with Ruby on Rails and vanilla JavaScript, while the back end is an API that is also designed with Rails.',
-    image: GeographyQuizImage,
-    github_link: "https://github.com/NeilTheSeal/geography-quiz-fe",
-  },
-  {
     title:
-      "Example of a Scientific Simulation - Reversible and Irreversible Expansion or Compression",
+      "Example of a Scientific Simulation",
     link: "https://learncheme.com/simulations/thermodynamics/thermo-1/reversible-irreversible-expansion-compression-work/",
     description:
       "This simulation demonstrates the difference between reversible and irreversible expansion or compression of a gas. The user can change the pressure and volume of the gas, and the simulation will show the work done on the gas. The simulation is written in JavaScript and uses the HTML5 canvas element for rendering.",
     image: ExpansionImage,
     github_link:
       "https://github.com/LearnChemE/LearnChemE.github.io/tree/master/demos/ReversibleAndIrreversibleExpansionAndCompressionWork",
+  },
+  {
+    title:
+      "NeilTheSeal GitHub Pages",
+    link: "https://neiltheseal.github.io",
+    description:
+      "This is the site where I put my side projects and some fun web applications that I made in my free time.",
+    image: GithubPagesImage,
+    github_link:
+    "https://github.com/NeilTheSeal/NeilTheSeal.github.io/tree/main"
+  },
+  {
+    title: "World Geography Quiz",
+    link: "https://secret-citadel-94988-86e2ffef1cda.herokuapp.com",
+    description:
+      'Test your knowledge of world geography with this fun quiz. You will be asked a series of multiple choice questions and given a score at the end of the quiz. If you score high enough, you will appear on the high scores. Quiz questions are generated procedurally (that is, there is not a database of "quiz questions", but rather an algorithm that uses a database of world geographical information to generate questions). The front-end is designed with Ruby on Rails and vanilla JavaScript, while the back end is an API that is also designed with Rails.',
+    image: GeographyQuizImage,
+    github_link: "https://github.com/NeilTheSeal/geography-quiz-fe",
   },
 ];
