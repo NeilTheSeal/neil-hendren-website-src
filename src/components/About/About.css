@@ -47,6 +47,7 @@
   shape-outside: ellipse(50% 50% at center);
   margin: 20px;
   margin-right: 70px;
+  margin-bottom: 30px;
   width: 100px;
   height: 200px;
   position: relative;
@@ -91,6 +92,7 @@
 
   .about-image {
     margin-right: 40px;
+    margin-bottom: 20px;
   }
 
   .about-image > img {
