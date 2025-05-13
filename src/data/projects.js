@@ -1,4 +1,4 @@
-import ExpansionImage from "/src/assets/adiabatic_irreversible_expansion_compression.jpg";
+import FlashImage from "/src/assets/adiabatic_flash_distillation.png";
 import CatalyticReactorImage from "/src/assets/catalytic_reactor.gif";
 import GeographyQuizImage from "/src/assets/geography_quiz.png";
 import GithubPagesImage from "/src/assets/github_pages.png";
@@ -30,24 +30,22 @@ export default [
     github_link: "https://github.com/runefall",
   },
   {
-    title:
-      "Example of a Scientific Simulation",
-    link: "https://learncheme.com/simulations/thermodynamics/thermo-1/reversible-irreversible-expansion-compression-work/",
+    title: "Example of a Scientific Simulation",
+    link: "https://learncheme.github.io/lab-experiments/adiabatic_flash_drum_with_binary_liquid_feed/dist/",
     description:
-      "This simulation demonstrates the difference between reversible and irreversible expansion or compression of a gas. The user can change the pressure and volume of the gas, and the simulation will show the work done on the gas. The simulation is written in JavaScript and uses the HTML5 canvas element for rendering.",
-    image: ExpansionImage,
+      "This simulates a flash distillation column, which separates a liquid consisting of two components into a vapor and a liquid rich in each of the components. The simulation is done using the JavaScript library p5.js, which allows for easy creation of interactive graphics. The simulation is designed to be used in a web browser, and it is responsive to different screen sizes.",
+    image: FlashImage,
     github_link:
-      "https://github.com/LearnChemE/LearnChemE.github.io/tree/master/demos/ReversibleAndIrreversibleExpansionAndCompressionWork",
+      "https://github.com/LearnChemE/LearnChemE.github.io/tree/master/lab-experiments/adiabatic_flash_drum_with_binary_liquid_feed",
   },
   {
-    title:
-      "NeilTheSeal GitHub Pages",
+    title: "NeilTheSeal GitHub Pages",
     link: "https://neiltheseal.github.io",
     description:
       "This is the site where I put my side projects and some fun web applications that I made in my free time.",
     image: GithubPagesImage,
     github_link:
-    "https://github.com/NeilTheSeal/NeilTheSeal.github.io/tree/main"
+      "https://github.com/NeilTheSeal/NeilTheSeal.github.io/tree/main",
   },
   {
     title: "World Geography Quiz",
