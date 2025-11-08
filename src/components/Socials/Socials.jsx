@@ -1,7 +1,7 @@
 import "./Socials.css";
 import GitHubLogo from "/src/assets/github-mark-white.svg";
 import LinkedInLogo from "/src/assets/linkedin-logo.svg";
-import Resume from "/src/assets/Neil_Hendren_Turing_Resume.pdf";
+import Resume from "/src/assets/Neil_Hendren_Full_Resume.pdf";
 import CVLogo from "/src/assets/resume_icon.svg";
 
 export default function Socials() {
