@@ -13,6 +13,10 @@ export default function AdviceColumn() {
             alt="Advice Column in a Newpaper"
           />
           <p>
+            <b>**Note**</b> this application has since been taken down because I
+            don't want to pay $20/month for a SendGrid subscription 😂
+          </p>
+          <p>
             When I was a kid, we had physical paper newspapers delivered to our
             door every day. And in these newspapers, in the entertainment
             section, there was a column called &quot;Ask Jen&quot; or something
