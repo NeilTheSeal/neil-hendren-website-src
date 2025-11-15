@@ -1,5 +1,6 @@
 import FlashImage from "/src/assets/adiabatic_flash_distillation.png";
 import CatalyticReactorImage from "/src/assets/catalytic_reactor.gif";
+import CosmateImage from "/src/assets/cosmate.png";
 import GeographyQuizImage from "/src/assets/geography_quiz.png";
 import GithubPagesImage from "/src/assets/github_pages.png";
 import LearnChemEImage from "/src/assets/learncheme.jpg";
@@ -12,6 +13,13 @@ export default [
     description:
       "LearnChemE is a website that provides free educational resources for chemical engineering students and professionals. The website is built on the WordPress platform, with custom widgets, components, and scripts I designed. LearnChemE has thousands of educational screencasts on all sorts of engineering topics, as well as 100+ interactive simulations, many of which I authored.",
     image: LearnChemEImage,
+  },
+  {
+    title: "Cosmate",
+    link: "https://cosmate.app",
+    description:
+      "Cosmate is a social media platform for sharing and discovering cosplay. The front end is built with React and deployed using Netlify, the back end is built with Express.js and is deployed on Heroku. We use MongoDB for data storage.",
+    image: CosmateImage,
   },
   {
     title: "Catalytic Reactor Virtual Laboratory",
