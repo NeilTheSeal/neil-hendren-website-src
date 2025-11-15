@@ -27,12 +27,8 @@ export default function Technologies() {
           technologies={TechnologiesData.languages}
         />
         <TechContainer
-          name="Frameworks"
+          name="Backend Frameworks"
           technologies={TechnologiesData.frameworks}
-        />
-        <TechContainer
-          name="Libraries"
-          technologies={TechnologiesData.libraries}
         />
         <TechContainer name="Tools" technologies={TechnologiesData.tools} />
         <TechContainer

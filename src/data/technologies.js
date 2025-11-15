@@ -1,4 +1,5 @@
 import Apple from "/src/assets/apple.svg";
+import AWS from "/src/assets/aws.svg";
 import Bash from "/src/assets/bash.svg";
 import Bootstrap from "/src/assets/bootstrap.svg";
 import CSS from "/src/assets/css.svg";
@@ -12,6 +13,7 @@ import Heroku from "/src/assets/heroku2.svg";
 import HTML5 from "/src/assets/html5.svg";
 import Illustrator from "/src/assets/illustrator.svg";
 import Inkscape from "/src/assets/inkscape.svg";
+import Jest from "/src/assets/jest.svg";
 import JQuery from "/src/assets/jquery.svg";
 import JS from "/src/assets/js.svg";
 import Markdown from "/src/assets/markdown.svg";
@@ -20,6 +22,7 @@ import Matlab from "/src/assets/matlab.svg";
 import Node from "/src/assets/node.svg";
 import OAuth from "/src/assets/oauth.svg";
 import P5 from "/src/assets/p5.svg";
+import Playwright from "/src/assets/playwright.svg";
 import Plotly from "/src/assets/plotly.svg";
 import Postgresql from "/src/assets/postgresql.svg";
 import Postman from "/src/assets/postman.svg";
@@ -38,6 +41,8 @@ import SVG from "/src/assets/svg.svg";
 import Tailwind from "/src/assets/tailwind.svg";
 import Tex from "/src/assets/tex.svg";
 import TypeScript from "/src/assets/ts.svg";
+import Linux from "/src/assets/tux.svg";
+import Vitest from "/src/assets/vitest-logo.svg";
 import VSCode from "/src/assets/vscode.svg";
 import Webpack from "/src/assets/webpack.svg";
 import Windows from "/src/assets/windows.svg";
@@ -45,6 +50,16 @@ import WordPress from "/src/assets/wordpress.svg";
 
 export default {
   languages: [
+    {
+      name: "TypeScript",
+      src: TypeScript,
+      link: "https://www.typescriptlang.org/",
+    },
+    {
+      name: "JavaScript",
+      src: JS,
+      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    },
     {
       name: "CSS3",
       src: CSS,
@@ -56,24 +71,9 @@ export default {
       link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     },
     {
-      name: "JS ES6",
-      src: JS,
-      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    },
-    {
-      name: "Markdown",
-      src: Markdown,
-      link: "https://www.markdownguide.org/",
-    },
-    {
       name: "Mathematica",
       src: Mathematica,
       link: "https://www.wolfram.com/mathematica/",
-    },
-    {
-      name: "Matlab",
-      src: Matlab,
-      link: "https://www.mathworks.com/products/matlab.html",
     },
     {
       name: "Python",
@@ -95,15 +95,10 @@ export default {
       src: Tex,
       link: "https://en.wikipedia.org/wiki/TeX",
     },
-    {
-      name: "TypeScript",
-      src: TypeScript,
-      link: "https://www.typescriptlang.org/",
-    },
   ],
   frameworks: [
     {
-      name: "Express.js",
+      name: "Express.ts",
       src: Express,
       link: "https://expressjs.com/",
     },
@@ -116,11 +111,6 @@ export default {
       name: "React",
       src: React,
       link: "https://react.dev",
-    },
-    {
-      name: "REST",
-      src: Rest,
-      link: "https://restfulapi.net/",
     },
     {
       name: "WordPress",
@@ -167,11 +157,6 @@ export default {
       link: "https://git-scm.com/",
     },
     {
-      name: "Node",
-      src: Node,
-      link: "https://nodejs.org/",
-    },
-    {
       name: "SSH",
       src: Ssh,
       link: "https://en.wikipedia.org/wiki/Secure_Shell",
@@ -188,6 +173,11 @@ export default {
       src: Windows,
       link: "https://www.microsoft.com/en-us/windows",
     },
+    {
+      name: "Linux",
+      src: Linux,
+      link: "https://www.linux.org/",
+    },
   ],
   testing: [
     {
@@ -199,6 +189,21 @@ export default {
       name: "RSpec",
       src: RSpec,
       link: "https://rspec.info/",
+    },
+    {
+      name: "Vitest",
+      src: Vitest,
+      link: "https://vitest.dev/",
+    },
+    {
+      name: "Playwright",
+      src: Playwright,
+      link: "https://playwright.dev/",
+    },
+    {
+      name: "Jest",
+      src: Jest,
+      link: "https://jestjs.io/",
     },
   ],
   tools: [
@@ -221,11 +226,6 @@ export default {
       name: "VSCode",
       src: VSCode,
       link: "https://code.visualstudio.com/",
-    },
-    {
-      name: "Slack",
-      src: Slack,
-      link: "https://slack.com/",
     },
   ],
   design: [
@@ -280,6 +280,11 @@ export default {
       name: "PostgreSQL",
       src: Postgresql,
       link: "https://www.postgresql.org/",
+    },
+    {
+      name: "AWS",
+      src: AWS,
+      link: "https://aws.amazon.com/",
     },
   ],
 };

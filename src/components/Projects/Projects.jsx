@@ -5,7 +5,7 @@ import ProjectsData from "/src/data/projects.js";
 export default function Projects() {
   return (
     <section id="projects">
-      <h2 className="projects-header">Notable Projects</h2>
+      <h2 className="projects-header">Public Projects</h2>
       {ProjectsData.map((project, i) => (
         <Project project={project} key={i} />
       ))}

@@ -11,18 +11,18 @@ export default function About() {
             <img src={Climbing} alt="Climbing" />
           </div>
           <p>
-            Hi! I&apos;m a full-stack web developer with a background in
-            chemical and biological engineering. I have experience with a number
-            of different languages and frameworks, and I enjoy building web
-            applications that are both visually appealing and user-friendly. I
-            love science and engineering, and love finding creative ways to
-            improve the performance and usability of my apps. At the University
-            of Colorado, I built scientific simulations, teaching Chemical
-            Engineering concepts to students. At CoBank, I work on the customer
-            portals and supporting infrastructure. When I&apos;m not coding, I
-            enjoy olympic lifting, volleyball, playing musical instruments, and
-            chess. My goal is to continue to learn and grow as a developer, and
-            to build applications that make a positive impact on the world.
+            Hi! I&apos;m a full-stack software engineer with a background in
+            chemical and biological engineering. I&apos;ve built production web
+            applications, scientific simulations, and internal tools using
+            modern JavaScript/TypeScript, React, and Node, with experience
+            across cloud, data, and DevOps workflows. I specialize in writing
+            clean, maintainable code, intuitive UX, and try to have a measurable
+            impact—whether that&apos;s developing a secure web portal, designing
+            small websites, creating scientific simulations, streamlining
+            internal processes, or any other engineering work that the job might
+            require. Outside of work, I lift, play volleyball, play piano and
+            guitar, and practice chess. I&apos;m always looking for new ways to
+            learn and grow my abilities and knowledge base.
           </p>
         </div>
       </div>
