@@ -75,14 +75,14 @@ export default {
     //   link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     // },
     {
-      name: "Mathematica",
-      src: Mathematica,
-      link: "https://www.wolfram.com/mathematica/",
-    },
-    {
       name: "Python",
       src: Python,
       link: "https://www.python.org/",
+    },
+    {
+      name: "Mathematica",
+      src: Mathematica,
+      link: "https://www.wolfram.com/mathematica/",
     },
     {
       name: "Ruby",
@@ -190,9 +190,14 @@ export default {
   ],
   testing: [
     {
-      name: "Cypress.io",
-      src: Cypress,
-      link: "https://www.cypress.io/",
+      name: "Vitest",
+      src: Vitest,
+      link: "https://vitest.dev/",
+    },
+    {
+      name: "Jest",
+      src: Jest,
+      link: "https://jestjs.io/",
     },
     {
       name: "RSpec",
@@ -200,19 +205,14 @@ export default {
       link: "https://rspec.info/",
     },
     {
-      name: "Vitest",
-      src: Vitest,
-      link: "https://vitest.dev/",
-    },
-    {
       name: "Playwright",
       src: Playwright,
       link: "https://playwright.dev/",
     },
     {
-      name: "Jest",
-      src: Jest,
-      link: "https://jestjs.io/",
+      name: "Cypress.io",
+      src: Cypress,
+      link: "https://www.cypress.io/",
     },
   ],
   tools: [
