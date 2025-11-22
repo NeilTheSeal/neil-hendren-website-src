@@ -2,6 +2,8 @@
   --bg-color-primary: rgb(40, 64, 64);
   --bg-color-secondary: rgb(226, 226, 226);
   --text-color-primary: #deeefb;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 #app {

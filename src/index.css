@@ -53,9 +53,10 @@ h6 {
   isolation: isolate;
 }
 
-/* body {
+body {
   overflow-x: hidden;
-} */
+  max-width: 100vw !important;
+}
 
 section {
   padding-left: 0 !important;

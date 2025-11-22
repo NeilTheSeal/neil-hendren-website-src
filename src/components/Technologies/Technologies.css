@@ -38,13 +38,20 @@
   display: grid;
   gap: 30px;
   row-gap: 50px;
-  grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
   width: 100%;
 }
 
 @media screen and (max-width: 480px) {
   .technologies-header {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .technologies-backdrop {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
   }
 }
 
