@@ -4,6 +4,7 @@ import CosmateImage from "/src/assets/cosmate.png";
 import GeographyQuizImage from "/src/assets/geography_quiz.png";
 import GithubPagesImage from "/src/assets/github_pages.png";
 import LearnChemEImage from "/src/assets/learncheme.jpg";
+import MakeAiArgueImage from "/src/assets/make_ai_argue.png";
 import RuneFallImage from "/src/assets/runefall.png";
 
 export default [
@@ -13,6 +14,13 @@ export default [
     description:
       "LearnChemE is a website that provides free educational resources for chemical engineering students and professionals. The website is built on the WordPress platform, with custom widgets, components, and scripts I designed. LearnChemE has thousands of educational screencasts on all sorts of engineering topics, as well as 100+ interactive simulations, many of which I authored.",
     image: LearnChemEImage,
+  },
+  {
+    title: "Make AI Argue!!",
+    link: "https://makeaiargue.com",
+    description:
+      "Make AI Argue!! is a web application that allows users to create debates between two AI models on any topic they choose, with text-to-speech personalities for each AI model. The front end is built with React.ts and deployed using Netlify, while the back end is built with Express.ts and deployed on Heroku. The application uses numerous AI models from different providers that the user can choose from.",
+    image: MakeAiArgueImage,
   },
   {
     title: "Cosmate",
