@@ -42,7 +42,7 @@ export default function Technologies() {
         <TechContainer name="Testing" technologies={TechnologiesData.testing} />
         <TechContainer name="Design" technologies={TechnologiesData.design} />
         <TechContainer
-          name="Deployment and Production"
+          name="Deployment and Data Storage"
           technologies={TechnologiesData.deployment}
         />
       </div>

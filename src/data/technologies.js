@@ -2,7 +2,7 @@ import Apple from "/src/assets/apple.svg";
 import AWS from "/src/assets/aws.svg";
 import Bash from "/src/assets/bash.svg";
 import Bootstrap from "/src/assets/bootstrap.svg";
-import CSS from "/src/assets/css.svg";
+// import CSS from "/src/assets/css.svg";
 import Cypress from "/src/assets/cypress.svg";
 import Excel from "/src/assets/excel.svg";
 import Express from "/src/assets/express.svg";
@@ -10,35 +10,39 @@ import Git from "/src/assets/git.svg";
 import GitHub from "/src/assets/github.svg";
 import Google from "/src/assets/google.svg";
 import Heroku from "/src/assets/heroku2.svg";
-import HTML5 from "/src/assets/html5.svg";
+// import HTML5 from "/src/assets/html5.svg";
 import Illustrator from "/src/assets/illustrator.svg";
-import Inkscape from "/src/assets/inkscape.svg";
+// import Inkscape from "/src/assets/inkscape.svg";
 import Jest from "/src/assets/jest.svg";
 import JQuery from "/src/assets/jquery.svg";
 import JS from "/src/assets/js.svg";
-import Markdown from "/src/assets/markdown.svg";
+// import Markdown from "/src/assets/markdown.svg";
+import MaterialUI from "/src/assets/material-ui.svg";
 import Mathematica from "/src/assets/mathematica.svg";
-import Matlab from "/src/assets/matlab.svg";
-import Node from "/src/assets/node.svg";
-import OAuth from "/src/assets/oauth.svg";
+// import Matlab from "/src/assets/matlab.svg";
+import MongoDB from "/src/assets/mongodb.svg";
+// import Node from "/src/assets/node.svg";
+// import OAuth from "/src/assets/oauth.svg";
 import P5 from "/src/assets/p5.svg";
 import Playwright from "/src/assets/playwright.svg";
 import Plotly from "/src/assets/plotly.svg";
 import Postgresql from "/src/assets/postgresql.svg";
 import Postman from "/src/assets/postman.svg";
+import Powershell from "/src/assets/powershell.svg";
 import Python from "/src/assets/python.svg";
 import Rails from "/src/assets/rails.svg";
 import React from "/src/assets/react.svg";
 import ReactRouter from "/src/assets/react_router.svg";
-import Rest from "/src/assets/rest.svg";
+// import Rest from "/src/assets/rest.svg";
 import RSpec from "/src/assets/rspec.svg";
 import Ruby from "/src/assets/ruby.svg";
 import Sass from "/src/assets/sass.svg";
-import Slack from "/src/assets/slack.svg";
+// import Slack from "/src/assets/slack.svg";
 import SQL from "/src/assets/sql.svg";
 import Ssh from "/src/assets/ssh.svg";
 import SVG from "/src/assets/svg.svg";
 import Tailwind from "/src/assets/tailwind.svg";
+import Terraform from "/src/assets/terraform.svg";
 import Tex from "/src/assets/tex.svg";
 import TypeScript from "/src/assets/ts.svg";
 import Linux from "/src/assets/tux.svg";
@@ -60,16 +64,16 @@ export default {
       src: JS,
       link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
-    {
-      name: "CSS3",
-      src: CSS,
-      link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-    },
-    {
-      name: "HTML5",
-      src: HTML5,
-      link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-    },
+    // {
+    //   name: "CSS3",
+    //   src: CSS,
+    //   link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    // },
+    // {
+    //   name: "HTML5",
+    //   src: HTML5,
+    //   link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    // },
     {
       name: "Mathematica",
       src: Mathematica,
@@ -161,6 +165,11 @@ export default {
       src: Ssh,
       link: "https://en.wikipedia.org/wiki/Secure_Shell",
     },
+    {
+      name: "Powershell",
+      src: Powershell,
+      link: "https://learn.microsoft.com/en-us/powershell/",
+    },
   ],
   os: [
     {
@@ -240,10 +249,15 @@ export default {
       link: "https://www.adobe.com/products/illustrator.html",
     },
     {
-      name: "Inkscape",
-      src: Inkscape,
-      link: "https://inkscape.org/",
+      name: "Material UI",
+      src: MaterialUI,
+      link: "https://mui.com/",
     },
+    // {
+    //   name: "Inkscape",
+    //   src: Inkscape,
+    //   link: "https://inkscape.org/",
+    // },
     {
       name: "SASS/SCSS",
       src: Sass,
@@ -262,24 +276,34 @@ export default {
   ],
   deployment: [
     {
-      name: "GitHub",
+      name: "GH Actions",
       src: GitHub,
       link: "https://www.github.com",
+    },
+    {
+      name: "Terraform",
+      src: Terraform,
+      link: "https://www.terraform.io/",
     },
     {
       name: "Heroku",
       src: Heroku,
       link: "https://www.heroku.com",
     },
-    {
-      name: "OAuth",
-      src: OAuth,
-      link: "https://oauth.net/",
-    },
+    // {
+    //   name: "OAuth",
+    //   src: OAuth,
+    //   link: "https://oauth.net/",
+    // },
     {
       name: "PostgreSQL",
       src: Postgresql,
       link: "https://www.postgresql.org/",
+    },
+    {
+      name: "MongoDB",
+      src: MongoDB,
+      link: "https://www.mongodb.com/",
     },
     {
       name: "AWS",
