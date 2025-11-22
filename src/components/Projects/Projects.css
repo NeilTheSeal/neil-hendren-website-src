@@ -27,13 +27,13 @@
 
 @media screen and (min-width: 1080px) {
   #projects {
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: repeat(3, max-content);
   }
 }
 
 @media screen and (min-width: 2160px) {
   #projects {
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(4, max-content);
   }
 }
 

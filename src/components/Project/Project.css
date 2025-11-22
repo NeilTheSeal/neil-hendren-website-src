@@ -20,7 +20,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  padding: 20px;
+  padding: 12px;
   background-color: rgba(0, 0, 0, 0.75);
   opacity: 0;
   transition-property: opacity;
@@ -35,7 +35,7 @@
 .project-link {
   color: rgb(149, 198, 214);
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   text-align: center;
   display: grid;
   grid-template-columns: calc(100% - 30px) max-content;
@@ -51,21 +51,22 @@
 }
 
 .project-link > h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .project-description > p {
   color: var(--text-color-primary);
   font-size: 0.7rem;
   pointer-events: none;
-  padding: 10px;
+  padding: 6px;
+  padding-bottom: 10px;
   text-align: justify;
   transition-property: font-size;
   transition-duration: 0.5s;
 }
 
 .external-link {
-  width: 20px;
+  width: 15px;
 }
 
 .project-github-link {
@@ -76,12 +77,12 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  gap: 15px;
+  gap: 5px;
   text-decoration: none;
   background-color: rgb(94, 94, 45);
-  padding: 10px 18px;
+  padding: 5px 9px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 0px;
   border: 1px solid white;
 }
 
@@ -94,7 +95,7 @@
 }
 
 .project-github-link > img {
-  max-width: 40px;
+  max-width: 30px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -153,33 +154,42 @@
 
 @media screen and (min-width: 1080px) {
   .project {
-    width: calc(50vw - 80px);
-    max-width: 768px;
+    width: calc(33vw - 40px);
+    max-width: 400px;
     align-self: center;
   }
 
+  .project-link > h3 {
+    font-size: 0.8rem;
+  }
+
   .project-description > p {
-    font-size: 1rem;
+    font-size: calc(0.62vw + 0.225rem);
   }
 
   .project-github-link {
-    font-size: 1rem;
-    padding: 10px 20px;
+    font-size: 0.7rem;
+    padding: 6px 10px;
   }
 
   .project-github-link > img {
-    max-width: 35px;
+    max-width: 25px;
   }
 }
 
 @media screen and (min-width: 2160px) {
   .project {
     width: calc(33.33vw - 80px);
-    max-width: 768px;
+    max-width: 500px;
+  }
+
+  .project-link > h3 {
+    font-size: 1.2rem;
   }
 
   .project-description > p {
     font-size: 1.1rem;
+    padding: 11px;
   }
 
   .project-github-link {
